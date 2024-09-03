@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Blog</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- HEADER -->
+    
+    
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <a href="#home">My Blog</a>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blogs</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <!-- Initially shown -->
+        <button id="register-btn" onclick="register()">Register</button>
+        <!-- Shown after sign-in -->
+        <button id="logout-btn" onclick="logout()" style="display: none;">Logout</button>
+      </div>
+    </div>
+  </header>
+
+  <script>
+    // JavaScript to handle sign-in/sign-out
+    function register() {
+      alert("Register clicked! (Add your registration logic here)");
+      // Simulate sign-in
+      document.getElementById('register-btn').style.display = 'none';
+      document.getElementById('logout-btn').style.display = 'block';
+    }
+
+    function logout() {
+      alert("Logout clicked! (Add your logout logic here)");
+      // Simulate sign-out
+      document.getElementById('register-btn').style.display = 'block';
+      document.getElementById('logout-btn').style.display = 'none';
+    }
+  </script>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="footer-about">
+              <h3>About Me</h3>
+              <p>I'm a passionate blogger who loves sharing insights on tech, lifestyle, and personal growth. Welcome to my blog!</p>
+            </div>
+            <div class="footer-links">
+              <h3>Quick Links</h3>
+              <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <h3>Follow Me</h3>
+              <ul>
+                <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="footer-bottom">
+            <p>&copy; 2024 Techy_techyDev. All rights reserved.</p>
+          </div>
+        </div>
+      </footer>
+      
+    
+</body>
+</html>
